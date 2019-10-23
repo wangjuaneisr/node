@@ -1,0 +1,26 @@
+{
+  "name": "node",
+  "version": "1.0.0",
+  "description": "``` nodejs 安装与使用 NodeJS 模块 NPM  ``` ### NodeJS = javascript执行环境+javascript的拓展功能 ### Node.js是基于Chrome V8引擎的javascript运行环境 ### 事件驱动、非阻塞试的I/O模型 轻量高效",
+  "main": "04-1.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wangjuaneisr/node.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wangjuaneisr/node/issues"
+  },
+  "homepage": "https://github.com/wangjuaneisr/node#readme",
+  "dependencies": {
+    "jquery": "^3.4.1"
+  },
+  "devDependencies": {
+    "express": "^4.17.1"
+  }
+}
