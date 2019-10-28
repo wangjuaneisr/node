@@ -1,0 +1,34 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="./jquery.js"></script>
+</head>
+<body>
+    <!-- 回调函数 -->
+    <script>
+        ;(function(){
+            $.fn.show = function(url,fn){
+                let iframe = $('<iframe src="'+url+'"></frame>').appendTo('body');
+
+                    iframe.on('load',function(){
+                        console.log(this)
+                        let data = $(this.contentDocument).find('body').text();
+                        data = JSON.parse(data);
+
+                        fn(data);
+                        // return data;
+                    })
+            }
+        })();
+
+        //调用插件
+        let data = $('body').show('./data.json',function(a){
+            console.log(a);
+        });
+        
+    </script>
+</body>
+</html>
